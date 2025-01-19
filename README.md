@@ -1,5 +1,9 @@
 # 🎙️ Easy Audio to SRT
 
+Easily convert audio files into SRT subtitles for free and using AI locally (no token required).
+
+---
+
 ## Usage
 
 ```sh
