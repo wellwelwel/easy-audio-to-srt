@@ -1,0 +1,20 @@
+services:
+  transcribe:
+    build: .
+    container_name: whisper-openai
+    working_dir: /workspace
+    environment:
+      - FILE
+    volumes:
+      - .:/workspace
+    command: whisper $FILE --language pt --model turbo --output_format srt --word_timestamps True --max_words_per_line 20
+
+  translate:
+    build: .
+    container_name: srt-translator
+    working_dir: /workspace
+    environment:
+      - FILE
+    volumes:
+      - .:/workspace
+    command: python3 translate_srt.py
