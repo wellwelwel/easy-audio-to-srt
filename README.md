@@ -28,7 +28,7 @@ sh translate <file>.srt
 >
 > - The **Docker** image is pre-configured to use the largest **OpenAI** model available (turbo). For lighter models, check the [available models](https://github.com/openai/whisper?tab=readme-ov-file#available-models-and-languages) and change it in the [./Dockerfile](./Dockerfile) before executing the scripts.
 > - Change the primary language (`pt`) in the [./docker-compose.yml](./docker-compose.yml) `transcribe` command.
-> - Change the output translation language (`en`) in the [./translate_srt.py](./translate_srt.py) command.
+> - Change the output translation language (`en`) in the [./translate_srt.py](./translate_srt.py) file.
 
 ---
 
