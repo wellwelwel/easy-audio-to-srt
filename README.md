@@ -14,9 +14,6 @@ sh transcribe <file>.wav
 sh translate <file>.srt
 ```
 
-> [!NOTE]
-> This repository is not maintained.
-
 ---
 
 ## Requirements
